@@ -2,6 +2,46 @@
 
 Append-only operational timeline.
 
+## [2026-04-24] ingest | OpenSpec + Superpowers 源文件完整入库
+
+### Scope
+
+- 更新源页面: `wiki/sources/openspec-superpowers-practice-guide.md`（补充五阶段流水线、场景决策表、FAQ、dlabel-cloud-mall 实战案例、常见问题与改进建议）
+- 更新实体页面: `wiki/entities/openspec.md`（补充目录结构、核心命令、安装方式），`wiki/entities/superpowers.md`（补充七步流程、TDD 纪律、安装方式、目录结构）
+- 更新概念页面: `wiki/concepts/spec-driven-workflow-and-review-discipline.md`（补充场景决策表、常见坑模式）
+- 更新合成页面: `wiki/overview.md`
+
+### Outcomes
+
+- Raw 源文件全部关键内容已录入 wiki：OpenSpec/Superpowers 工作流、五阶段流水线、场景分级、实战案例、经验教训。
+- 实体页面现在包含可操作的目录结构和命令参考。
+- 概念页面新增常见坑模式，便于后续项目参考。
+
+### Open Questions / Next Actions
+
+- 沉淀统一的 DoD（Definition of Done）模板供 AI 开发使用。
+- 明确任务规模触发完整 Superpowers 链路的阈值。
+
+## [2026-04-24] ingest | OpenSpec + Superpowers 规范开发指南
+
+### Scope
+
+- Added source page: `wiki/sources/openspec-superpowers-practice-guide.md`
+- Added entity pages: `wiki/entities/openspec.md`, `wiki/entities/superpowers.md`
+- Added concept page: `wiki/concepts/spec-driven-workflow-and-review-discipline.md`
+- Updated hub pages: `wiki/index.md`, `wiki/overview.md`
+
+### Outcomes
+
+- Completed ingest from `raw/sources/OpenSpec + Superpowers规范开发指南.md`.
+- Added the OpenSpec + Superpowers operational layer and its key entities/concept links.
+- Connected spec-driven governance concepts into the existing enterprise + personal workflow graph.
+
+### Open Questions / Next Actions
+
+- Define explicit thresholds for when full Superpowers chain is mandatory vs. minimal-flow exceptions.
+- Decide whether to add a task-level minimum evidence rubric and make it a shared checklist.
+
 ## [2026-04-22] refactor | Initialize LLM wiki scaffold
 
 ### Scope

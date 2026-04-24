@@ -12,11 +12,14 @@ Read this page first before deep dives.
 
 - [[sources/llm-wiki-pattern]] - Pattern proposal for building a persistent, LLM-maintained personal wiki.
 - [[sources/claude-code-enterprise-playbook]] - Enterprise implementation guide for Claude Code governance, CI/CD, security, and performance.
+- [[sources/openspec-superpowers-practice-guide]] - Spec-first + execution-discipline workflow pattern for AI-driven team development.
 
 ## Entities
 
 - [[entities/llm-agent]] - The agent as ongoing wiki maintainer, not one-shot chatbot.
 - [[entities/obsidian]] - The markdown workspace and visualization interface for the wiki.
+- [[entities/openspec]] - Specification-driven layer and change-tracking mechanism for AI-assisted development.
+- [[entities/superpowers]] - Execution workflow discipline and task orchestration layer for AI development.
 - [[entities/claude-code]] - Core AI coding platform entity for team-level workflows.
 - [[entities/github-actions]] - Automation platform that operationalizes AI review in CI/CD.
 
@@ -29,6 +32,7 @@ Read this page first before deep dives.
 - [[concepts/policy-driven-tool-permissions]] - Control tool execution with explicit policy and trust boundaries.
 - [[concepts/ai-ci-cd-automation]] - Integrate AI review/security into automated pipelines.
 - [[concepts/context-and-cost-optimization]] - Optimize context usage, latency, and spend.
+- [[concepts/spec-driven-workflow-and-review-discipline]] - Combine OpenSpec spec discipline with Superpowers execution governance.
 
 ## Analyses
 
