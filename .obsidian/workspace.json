@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "551db44f1a024d30",
+        "id": "d0fa3fd78686b278",
         "type": "tabs",
         "children": [
           {
-            "id": "c1e73d85ad426f47",
+            "id": "adf4f13b0522e5e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
+                "file": "wiki/sources/claude-mem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "personal-vs-enterprise-llm-workflows"
+              "title": "claude-mem"
+            }
+          },
+          {
+            "id": "601385ae77785a62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AGENTS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
+                "file": "raw/sources/OpenSpec + Superpowers规范开发指南.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "personal-vs-enterprise-llm-workflows 的反向链接列表"
+              "title": "OpenSpec + Superpowers规范开发指南 的反向链接列表"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
+                "file": "raw/sources/OpenSpec + Superpowers规范开发指南.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "personal-vs-enterprise-llm-workflows 的出链列表"
+              "title": "OpenSpec + Superpowers规范开发指南 的出链列表"
             }
           },
           {
@@ -134,6 +149,20 @@
               },
               "icon": "lucide-tags",
               "title": "标签"
+            }
+          },
+          {
+            "id": "e767f4964b89ace0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "copilot/copilot-conversations/当前摸@20260424_171333.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "当前摸@20260424_171333"
             }
           },
           {
@@ -156,21 +185,67 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
+                "file": "AGENTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "personal-vs-enterprise-llm-workflows 的大纲"
+              "title": "AGENTS 的大纲"
+            }
+          },
+          {
+            "id": "b423256bc28594cf",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "1a5b059d360d0eef",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "19602ddeb89751f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/sources/claude-mem.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "claude-mem"
+            }
+          },
+          {
+            "id": "c441e48ae6054623",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 980.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,46 +255,49 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "c1e73d85ad426f47",
+  "active": "b423256bc28594cf",
   "lastOpenFiles": [
+    "wiki/overview.md",
+    "wiki/quickstart.md",
+    "wiki/log.md",
+    "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
+    "wiki/entities/harness.md",
+    "wiki/entities/github-actions.md",
+    "wiki/entities/claude-mem.md",
+    "wiki/entities/claude-code.md",
+    "wiki/entities/superpowers.md",
+    "wiki/entities/openspec.md",
+    "wiki/entities/obsidian.md",
+    "wiki/entities/llm-agent.md",
+    "wiki/sources/claude-mem.md",
+    "wiki/sources/ai-template2-scaffold.md",
+    "wiki/index.md",
+    "raw/sources/claude-mem.md",
+    "wiki/concepts/progressive-disclosure-context-retrieval.md",
+    "AGENTS.md",
+    "wiki/sources/llm-wiki-pattern.md",
+    "wiki/concepts/persistent-agent-memory.md",
+    "raw/sources/claude-mem安装.md",
+    "raw/sources/README.zh.md",
+    "raw/sources/OpenSpec + Superpowers规范开发指南.md",
     "raw/sources/综合实战完整指南.md",
     "raw/sources/llm-wiki.md",
-    "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
-    "wiki/sources/llm-wiki-pattern.md",
-    "wiki/sources/claude-code-enterprise-playbook.md",
-    "wiki/quickstart.md",
-    "AGENTS.md",
-    "wiki/entities/obsidian.md",
-    "wiki/concepts/policy-driven-tool-permissions.md",
-    "wiki/concepts/context-and-cost-optimization.md",
-    "wiki/concepts/ai-ci-cd-automation.md",
-    "wiki/index.md",
-    "wiki/concepts/ingest-query-lint-loop.md",
-    "wiki/entities/github-actions.md",
-    "wiki/concepts/team-governance-for-ai-coding.md",
-    "wiki/entities/claude-code.md",
-    "Clippings/‬⁡⁣⁢‌⁣‍‍‬﻿⁢‬⁢﻿​‌⁣‬﻿‌‬⁤⁣​‍​​⁢​​⁡⁢‬‌⁢⁡​⁢‌⁣⁡﻿​‌⁣﻿​⁡AI 编程三剑客：Spec-Kit、OpenSpec、Superpowers 深度对比与实战指南 - 飞书云文档.md",
-    "Clippings",
-    "wiki/entities/llm-agent.md",
-    "wiki/log.md",
-    "wiki/overview.md",
-    "wiki/concepts/schema-driven-maintenance.md",
-    "wiki/concepts/persistent-wiki-compilation.md",
-    "未命名.md",
-    "wiki/tasks/backlog.md",
-    "wiki/templates/analysis-template.md",
-    "wiki/templates/source-template.md",
-    "doc",
-    "wiki/templates",
-    "wiki/tasks",
-    "wiki/analyses",
-    "wiki/concepts",
-    "wiki/entities",
-    "wiki/sources",
-    "wiki",
-    "raw/assets"
+    "copilot/copilot-conversations/当前摸@20260424_171333.md",
+    "copilot/copilot-conversations",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "wiki/log.md.tmp.51612.1777015991525",
+    "wiki/index.md.tmp.51612.1777015979278",
+    "wiki/overview.md.tmp.51612.1777015958199",
+    "wiki/concepts/hooks-as-safety-net.md.tmp.51612.1777015943221",
+    "wiki/concepts/tdd-as-hard-gate.md.tmp.51612.1777015942168",
+    "wiki/concepts/specialized-agent-pattern.md.tmp.51612.1777015941125",
+    "wiki/concepts/layered-project-harness.md.tmp.51612.1777015940079"
   ]
 }

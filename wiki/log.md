@@ -2,6 +2,70 @@
 
 Append-only operational timeline.
 
+## [2026-04-25] refactor | 默认中文输出规则
+
+### Scope
+
+- 更新规则文件: `AGENTS.md`
+- 中文化本次 Claude-Mem 录入相关页面: `wiki/sources/claude-mem.md`, `wiki/entities/claude-mem.md`, `wiki/concepts/persistent-agent-memory.md`, `wiki/concepts/progressive-disclosure-context-retrieval.md`
+- 中文化相关 hub/任务/日志摘要: `wiki/index.md`, `wiki/overview.md`, `wiki/tasks/backlog.md`, `wiki/log.md`
+
+### Outcomes
+
+- 明确 agent 回复、wiki 页面、index 摘要、overview 综合、tasks 和 log 默认使用简体中文。
+- 保留工具名、命令、项目名、路径、来源标题和会降低精度的技术术语原文。
+- 将刚录入的 Claude-Mem 相关内容调整为中文表达，保持链接和证据关系不变。
+
+### Open Questions / Next Actions
+
+- 后续 lint 可逐步中文化更早的英文模板与历史页面。
+
+## [2026-04-25] ingest | Claude-Mem 持久化记忆
+
+### Scope
+
+- 新增来源页面: `wiki/sources/claude-mem.md`
+- 新增实体页面: `wiki/entities/claude-mem.md`
+- 新增概念页面: `wiki/concepts/persistent-agent-memory.md`, `wiki/concepts/progressive-disclosure-context-retrieval.md`
+- 更新相关页面: `wiki/entities/claude-code.md`, `wiki/concepts/context-and-cost-optimization.md`, `wiki/concepts/hooks-as-safety-net.md`, `wiki/concepts/persistent-wiki-compilation.md`
+- 更新 hub/任务页面: `wiki/overview.md`, `wiki/index.md`, `wiki/tasks/backlog.md`
+
+### Outcomes
+
+- 完成 `raw/sources/claude-mem.md` 的录入。
+- 将 Claude-Mem 记录为一个具体的 Claude Code 持久化记忆系统，包含 hooks、worker 服务、SQLite、Chroma、Web 查看器和 `mem-search`。
+- 新增“持久化 agent 记忆”和“渐进式上下文检索”两个可复用概念，并接入既有的上下文成本与 wiki 编译主题。
+- 标出自动记忆捕获与可审计、经整理 wiki 综合之间的张力。
+
+### Open Questions / Next Actions
+
+- 定义自动捕获 agent 记忆的隐私、保留和修剪规则。
+- 判断何时 Claude-Mem 式记忆搜索已经足够，何时应提升为整理后的 wiki 页面。
+- 评估个人 vault 和小团队可接受的本地基础设施成本。
+
+## [2026-04-24] ingest | ai_template2 Multi-Module AI Collaboration Scaffold
+
+### Scope
+
+- Added raw source: `raw/sources/ai-template2-scaffold.md`
+- Added source page: `wiki/sources/ai-template2-scaffold.md`
+- Added entity page: `wiki/entities/harness.md`
+- Added concept pages: `wiki/concepts/layered-project-harness.md`, `wiki/concepts/specialized-agent-pattern.md`, `wiki/concepts/tdd-as-hard-gate.md`, `wiki/concepts/hooks-as-safety-net.md`
+- Updated hub pages: `wiki/index.md`, `wiki/overview.md`
+
+### Outcomes
+
+- Completed ingest from ai_template2 scaffold (`D:/Users/Administrator/Desktop/AI/ai_template2`).
+- Captured the concrete integration of OpenSpec + Superpowers + Claude Code Harness into a single project template.
+- Added new entity (Harness) and 4 concepts: layered harness organization, specialized agent routing, TDD hard gates, and lifecycle hooks as safety net.
+- Expanded the wiki from theoretical workflow patterns to a concrete, deployable scaffold reference.
+
+### Open Questions / Next Actions
+
+- Decide whether to adapt this scaffold for an actual project (replacing placeholders).
+- Explore whether hooks should be fail-closed for security-sensitive projects.
+- Define a minimum viable subset of the 9 commands + 6 skills + 4 agents for small teams.
+
 ## [2026-04-24] ingest | OpenSpec + Superpowers 源文件完整入库
 
 ### Scope

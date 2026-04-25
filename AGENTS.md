@@ -14,6 +14,7 @@ This vault uses a three-layer architecture:
 - Prefer explicit uncertainty over fabricated confidence.
 - Preserve contradictory evidence; do not hide it.
 - Keep writing concise, link-rich, and easy to navigate in Obsidian.
+- 默认使用简体中文输出：包括 agent 回复、wiki 页面、index 摘要、overview 综合、tasks 和 log 条目。工具名、命令、项目名、文件路径、引用的来源标题，以及翻译后会降低精度的技术术语，保留原文。
 
 ## Required Directory Layout
 

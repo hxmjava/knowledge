@@ -2,8 +2,8 @@
 title: Context and Cost Optimization
 type: concept
 status: active
-updated: 2026-04-22
-source_count: 1
+updated: 2026-04-25
+source_count: 2
 ---
 
 # Concept: Context and Cost Optimization
@@ -22,16 +22,19 @@ source_count: 1
 - 控制会话上下文规模（清理历史、拆分大任务）
 - 使用 `--verbose` 定位瓶颈
 - 按任务复杂度选择模型并设置预算阈值
+- 使用渐进式披露检索历史上下文，先取摘要和最近上下文，再按需深入观察、文件或时间线
 
 ## Supporting Sources
 
 - [[sources/claude-code-enterprise-playbook]]
+- [[sources/claude-mem]]
 
 ## Related Pages
 
 - [[entities/claude-code]]
 - [[concepts/team-governance-for-ai-coding]]
 - [[concepts/ingest-query-lint-loop]]
+- [[concepts/progressive-disclosure-context-retrieval]]
 
 ## Contradictions / Nuance
 
