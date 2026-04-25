@@ -2,8 +2,8 @@
 title: OpenSpec
 type: entity
 status: active
-updated: 2026-04-24
-source_count: 1
+updated: 2026-04-25
+source_count: 2
 ---
 
 # Entity: OpenSpec
@@ -32,6 +32,7 @@ OpenSpec 是一个规格驱动开发框架：先把"做什么"写清楚，再让
   ```
 - 变更先进入 `changes/`，成功合并并归档后再反映到 `specs/`，减少"口头改需求、代码偷偷改规范"。
 - 核心命令：`/opsx:explore`（探索）→ `/opsx:propose`（提案）→ `/opsx:apply`（实施）→ `/opsx:archive`（归档）。
+- 在部分教程/脚手架语境里，`/opsx:ff` 被用作“一次生成 proposal/design/tasks 等 artifacts 的 fast-forward 入口”，适合快速起步。
 - 扩展命令（如 verify）需切到 custom profile 并 `openspec update`。
 - 安装：`npm install -g @fission-ai/openspec@latest` → `openspec init`。
 - GitHub: https://github.com/Fission-AI/OpenSpec
@@ -44,8 +45,9 @@ OpenSpec 是一个规格驱动开发框架：先把"做什么"写清楚，再让
 ## Evidence
 
 - [[sources/openspec-superpowers-practice-guide]]
+- [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]
 
 ## Open Questions
 
 - 对于小规模 bugfix，`changes/` 体系应如何最小化执行步骤？
-- 团队是否规定了 custom profile 下扩展命令的启用策略？
+- `fast-forward` 风格命令与默认 OpenSpec 命令集之间的边界，团队是否已有统一解释？

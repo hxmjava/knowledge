@@ -2,8 +2,8 @@
 title: Spec-Driven Workflow and Review Discipline
 type: concept
 status: active
-updated: 2026-04-24
-source_count: 2
+updated: 2026-04-25
+source_count: 3
 ---
 
 # Concept: Spec-Driven Workflow and Review Discipline
@@ -19,18 +19,20 @@ source_count: 2
 ## Core Components
 
 - **规范层**：`openspec/` 组织、proposal/tasks/specs、change 与 archive。
+- **快捷起步层**：`/opsx:ff` 这类 fast-forward 入口，负责把“知道要做什么”快速压缩成可执行 artifacts。
 - **执行层**：计划化分解、子任务并行、TDD、代码审查。
 - **交付层**：任务完成有可验证证据，代码合并后执行文档回写与归档。
-- **复盘层**：异常路径和过程调整要有痕迹（评审结论、修订任务、归档说明）。
+- **复盘层**：异常路径和过程调整要有痕迹（评审结论、修订任务、归档说明、失败路径修复手册）。
 
 ## Core Sequence
 
 1. **提案** (OpenSpec)：`/opsx:explore` / `/opsx:propose` → `proposal.md` + `tasks.md` + 规范增量
-2. **纠偏** (Superpowers Plan)：技术栈或约束与初稿不一致时，重写任务分层与依赖（如 Wave 并行批次）
-3. **实现** (Superpowers)：`tasks.md` 驱动 + TDD + 子代理协作
-4. **验证** (测试/CI)：编译/测试 + 证据留存（命令、接口返回、截图或日志摘要）
-5. **归档** (OpenSpec)：评审与 `/opsx:archive`，规范与实现可追溯
-6. **维护**：关键事实回写 wiki 或后续检索页
+2. **快进入口** (OpenSpec / Scaffold)：必要时用 `/opsx:ff` 一次生成初始 artifacts，降低首次采用成本
+3. **纠偏** (Superpowers Plan)：技术栈或约束与初稿不一致时，重写任务分层与依赖（如 Wave 并行批次）
+4. **实现** (Superpowers)：`tasks.md` 驱动 + TDD + 子代理协作
+5. **验证** (测试/CI)：编译/测试 + 证据留存（命令、接口返回、截图或日志摘要）
+6. **归档** (OpenSpec)：评审与 `/opsx:archive`，规范与实现可追溯
+7. **维护**：关键事实回写 wiki 或后续检索页
 
 > `tasks.md` 可能是初稿；执行中允许由 Plan/评审调整为更合理的 Wave/依赖，但**变更要有记录**。
 
@@ -49,11 +51,13 @@ source_count: 2
 - **文档分散，版本漂移风险**：`docs/`、`openspec/`、`.cursor/doc/ai-context/` 语义重叠 → 规定单一事实源（SSOT）。
 - **跨模块联调成本高**：契约未先落定就写实现 → 先落 API 契约，再落 Controller。
 - **数据口径未确认就写分支**：先完成数据源定稿，再写业务分支，禁止默认长期使用临时方案。
+- **模板有了但边界没定**：像购物车这类状态功能，数量边界、价格口径、TTL 等业务规则若不先写进 spec，后续验证再严也会补不回来。
 
 ## Supporting Sources
 
 - [[sources/openspec-superpowers-practice-guide]]
 - [[sources/claude-code-enterprise-playbook]]
+- [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]
 
 ## Related Pages
 

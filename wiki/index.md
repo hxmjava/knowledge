@@ -13,6 +13,7 @@
 - [[sources/llm-wiki-pattern]] - 构建持久化、由 LLM 维护的个人 wiki 的模式提案。
 - [[sources/claude-code-enterprise-playbook]] - Claude Code 企业治理、CI/CD、安全与性能实施指南。
 - [[sources/openspec-superpowers-practice-guide]] - 面向 AI 团队开发的“规格优先 + 执行纪律”工作流模式。
+- [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]] - OpenSpec + Superpowers 的深度教程化落地：fast-forward 入口、购物车案例与失败修复路径。
 - [[sources/ai-template2-scaffold]] - 整合 OpenSpec、Superpowers 和 Claude Code Harness 的多模块 AI 协作脚手架。
 - [[sources/claude-mem]] - 面向 Claude Code 的持久化记忆压缩系统，使用 hooks、本地存储、搜索和渐进式披露。
 
@@ -21,7 +22,7 @@
 - [[entities/llm-agent]] - 作为持续 wiki 维护者的 agent，而不是一次性聊天机器人。
 - [[entities/obsidian]] - wiki 的 Markdown 工作区与可视化界面。
 - [[entities/openspec]] - AI 辅助开发中的规格驱动层与变更追踪机制。
-- [[entities/superpowers]] - AI 开发中的执行纪律与任务编排层。
+- [[entities/superpowers]] - AI 开发中的执行纪律与任务编排层，并强调按需加载核心 skills。
 - [[entities/claude-code]] - 面向团队工作流的核心 AI 编码平台实体。
 - [[entities/github-actions]] - 将 AI 审查落地到 CI/CD 的自动化平台。
 - [[entities/harness]] - 编排分层 agents、专项技能和生命周期 hooks 的多 agent 协作层。
@@ -36,10 +37,10 @@
 - [[concepts/policy-driven-tool-permissions]] - 用明确策略和信任边界控制工具执行。
 - [[concepts/ai-ci-cd-automation]] - 将 AI 审查和安全检查集成进自动化流水线。
 - [[concepts/context-and-cost-optimization]] - 优化上下文使用、延迟和成本。
-- [[concepts/spec-driven-workflow-and-review-discipline]] - 将 OpenSpec 规格纪律与 Superpowers 执行治理结合。
+- [[concepts/spec-driven-workflow-and-review-discipline]] - 将 OpenSpec 规格纪律、fast-forward 起步与 Superpowers 执行治理结合。
 - [[concepts/layered-project-harness]] - 围绕明确项目层、专属 agents 和验证策略组织 AI 辅助开发。
 - [[concepts/specialized-agent-pattern]] - 使用分层 agents 和领域检查技能，而不是单一通用 agent。
-- [[concepts/tdd-as-hard-gate]] - 将测试驱动开发视为所有生产代码变更的不可协商门禁。
+- [[concepts/tdd-as-hard-gate]] - 将测试驱动开发视为所有生产代码变更的不可协商门禁，并补充边界/异常/并发校验。
 - [[concepts/hooks-as-safety-net]] - 将生命周期 hooks 作为 AI agent 决策旁路的轻量安全提醒。
 - [[concepts/persistent-agent-memory]] - 跨 AI agent 会话存储和检索有用项目上下文。
 - [[concepts/progressive-disclosure-context-retrieval]] - 按层检索记忆，在连续性、成本和噪声之间取得平衡。

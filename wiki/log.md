@@ -106,6 +106,27 @@ Append-only operational timeline.
 - Define explicit thresholds for when full Superpowers chain is mandatory vs. minimal-flow exceptions.
 - Decide whether to add a task-level minimum evidence rubric and make it a shared checklist.
 
+## [2026-04-25] ingest | OpenSpec + Superpowers 深度教程
+
+### Scope
+
+- Added source page: `wiki/sources/ai-coding-advanced-openspec-superpowers-deep-guide.md`
+- Updated entity pages: `wiki/entities/openspec.md`, `wiki/entities/superpowers.md`
+- Updated concept pages: `wiki/concepts/spec-driven-workflow-and-review-discipline.md`, `wiki/concepts/tdd-as-hard-gate.md`
+- Updated hub pages: `wiki/overview.md`, `wiki/index.md`
+- Updated task page: `wiki/tasks/backlog.md`
+
+### Outcomes
+
+- Ingested the WeChat article `AI 编程进阶：OpenSpec + Superpowers 组合方案深度使用教程` from `https://mp.weixin.qq.com/s/092HGb6sEfz2Q-Pr-jEX2w`.
+- Captured its distinct contribution relative to the earlier OpenSpec + Superpowers guide: a more tutorialized, end-to-end path centered on `/opsx:ff → verify → archive`, a shopping-cart example, and a failure-recovery playbook.
+- Strengthened existing OpenSpec / Superpowers / spec-driven workflow / TDD pages with practical signals: fast-forward onboarding, minimal core skills, and boundary-condition checks before verification.
+
+### Open Questions / Next Actions
+
+- Verify whether `/opsx:ff` and `verify` are default OpenSpec commands or profile/scaffold-level wrappers.
+- Decide whether the shopping-cart edge-case checklist should become a reusable DoD template for stateful features.
+
 ## [2026-04-22] refactor | Initialize LLM wiki scaffold
 
 ### Scope

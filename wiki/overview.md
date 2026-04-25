@@ -3,7 +3,7 @@ title: 总览
 type: overview
 status: active
 updated: 2026-04-25
-source_count: 5
+source_count: 6
 ---
 
 # Overview
@@ -19,6 +19,7 @@ source_count: 5
 - 第三篇来源已补充：[[sources/openspec-superpowers-practice-guide]]，加入五阶段流水线、场景决策表、dlabel-cloud-mall 实战案例和常见坑模式。
 - 第四篇来源已录入：[[sources/ai-template2-scaffold]]，引入具体的多模块 AI 协作脚手架，包括分层 agents、专项检查技能、TDD 硬门禁和生命周期 hooks。
 - 第五篇来源已录入：[[sources/claude-mem]]，加入持久化 agent 记忆、渐进式披露检索，以及围绕 Claude Code 的本地记忆基础设施。
+- 第六篇来源已录入：[[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]，把 OpenSpec + Superpowers 从“方法组合”推进到“教程化落地”，补充 `/opsx:ff → verify → archive` 端到端路径、购物车案例、失败路径修复思路和按需加载 skills 的实践口径。
 
 ## 活跃主题
 
@@ -27,6 +28,7 @@ source_count: 5
 - 用 schema 驱动 agent 行为，保持操作一致性
 - 面向 AI 编码的团队治理、权限控制和 CI/CD 自动化
 - 规格优先开发（OpenSpec）与执行治理（Superpowers）结合
+- 用 fast-forward 入口降低规范工作流首次采用门槛，同时保留 verify/archive 收口
 - 基于场景选择工作流：核心模块走完整链路，热修走最小流程
 - 单一事实来源（SSOT）纪律，避免文档版本漂移
 - 分层项目 harness：common/service/app/message 配套专属 agents 和验证策略
@@ -34,6 +36,7 @@ source_count: 5
 - 生命周期 hooks 作为轻量安全网（fail-open，仅提醒）
 - 持久化 agent 记忆支撑跨会话连续性
 - 渐进式披露检索在记忆深度与上下文成本之间取得平衡
+- 失败路径修复手册与边界条件清单，帮助把“流程存在”推进到“流程真能落地”
 
 ## 证据基础
 
@@ -43,6 +46,7 @@ source_count: 5
   - [[sources/openspec-superpowers-practice-guide]]
   - [[sources/ai-template2-scaffold]]
   - [[sources/claude-mem]]
+  - [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]
 
 ## 开放线索
 
@@ -50,3 +54,4 @@ source_count: 5
 - 确定小团队权限与审计的最低基线策略。
 - 定义触发完整规格驱动执行链路的任务规模阈值。
 - 定义自动捕获 agent 记忆的隐私、修剪和审计规则。
+- 核实 `OpenSpec` 默认命令集与教程中 `/opsx:ff`、`verify` 的差异来源，避免把脚手架命令误当成官方默认命令。
