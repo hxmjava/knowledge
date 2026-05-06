@@ -13,9 +13,10 @@
 - [[sources/llm-wiki-pattern]] - 构建持久化、由 LLM 维护的个人 wiki 的模式提案。
 - [[sources/claude-code-enterprise-playbook]] - Claude Code 企业治理、CI/CD、安全与性能实施指南。
 - [[sources/openspec-superpowers-practice-guide]] - 面向 AI 团队开发的“规格优先 + 执行纪律”工作流模式。
-- [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]] - OpenSpec + Superpowers 的深度教程化落地：fast-forward 入口、购物车案例与失败修复路径。
+- [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]] - OpenSpec + Superpowers 的深度教程化落地：fast-forward 入口、购物车案例、失败修复路径与备用网址补记。
 - [[sources/ai-template2-scaffold]] - 整合 OpenSpec、Superpowers 和 Claude Code Harness 的多模块 AI 协作脚手架。
 - [[sources/claude-mem]] - 面向 Claude Code 的持久化记忆压缩系统，使用 hooks、本地存储、搜索和渐进式披露。
+- [[sources/claudian-obsidian-plugin]] - Claudian 插件：将 Claude/Codex 接入 Obsidian 笔记库，实现 vault-native AI 问答、润色和模板触发。
 
 ## Entities
 
@@ -27,6 +28,8 @@
 - [[entities/github-actions]] - 将 AI 审查落地到 CI/CD 的自动化平台。
 - [[entities/harness]] - 编排分层 agents、专项技能和生命周期 hooks 的多 agent 协作层。
 - [[entities/claude-mem]] - Claude Code 插件，用于持久、可搜索的跨会话项目记忆。
+- [[entities/claudian]] - Obsidian 插件，将 Claude Code 和 Codex 接入笔记库，提供 vault-native AI 协作。
+- [[entities/brat]] - Obsidian 测试版插件安装工具，用于安装未上架社区市场的 beta 插件。
 
 ## Concepts
 
@@ -44,6 +47,8 @@
 - [[concepts/hooks-as-safety-net]] - 将生命周期 hooks 作为 AI agent 决策旁路的轻量安全提醒。
 - [[concepts/persistent-agent-memory]] - 跨 AI agent 会话存储和检索有用项目上下文。
 - [[concepts/progressive-disclosure-context-retrieval]] - 按层检索记忆，在连续性、成本和噪声之间取得平衡。
+- [[concepts/vault-native-ai-assistant]] - 将 AI 嵌入笔记工作区，笔记库直接作为上下文，消除切换摩擦。
+- [[concepts/structured-tag-system-for-ai]] - 为 AI 设计的结构化标签体系，标签质量决定 AI 回答质量。
 
 ## Analyses
 

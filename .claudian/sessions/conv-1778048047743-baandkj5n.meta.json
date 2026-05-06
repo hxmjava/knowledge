@@ -1,0 +1,22 @@
+{
+  "id": "conv-1778048047743-baandkj5n",
+  "providerId": "claude",
+  "title": "当前模型",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778048047747,
+  "updatedAt": 1778048054248,
+  "lastResponseAt": 1778048048509,
+  "sessionId": "d82222e5-d00e-4fac-9775-7faf48491b0e",
+  "providerState": {
+    "providerSessionId": "d82222e5-d00e-4fac-9775-7faf48491b0e"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

@@ -160,3 +160,7 @@ dlabel-cloud-mall-platform/
 - 哪些任务特征（规模、影响面、风险）应触发完整 Superpowers 链路？
 - 在你们仓库，`openspec/changes` 与 `archive` 的分层是否已有正式迁移规范？
 - 如何沉淀统一的 DoD（Definition of Done）模板供 AI 开发使用？
+
+## Related
+
+- [[openspec-schema-tdd-workflow-injection]] — 专题实测：用 OpenSpec 自定义 schema 注入 TDD 纪律到编码工作流，结论是 propose 阶段有效、apply 阶段 TDD 循环未生效

@@ -2,6 +2,31 @@
 
 Append-only operational timeline.
 
+## [2026-05-06] ingest | Claudian Obsidian 插件
+
+### Scope
+
+- 新增来源页面: `wiki/sources/claudian-obsidian-plugin.md`
+- 新增实体页面: `wiki/entities/claudian.md`, `wiki/entities/brat.md`
+- 新增概念页面: `wiki/concepts/vault-native-ai-assistant.md`, `wiki/concepts/structured-tag-system-for-ai.md`
+- 更新实体页面: `wiki/entities/obsidian.md`
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`
+- 保存 raw 来源: `raw/sources/claudian-obsidian-plugin.md`
+
+### Outcomes
+
+- 完成微信文章 "Claudian：让 AI 直接长在 Obsidian 里的插件" 的录入。
+- 引入 "vault-native AI 助手"概念，与既有 LLM wiki 编译、上下文成本优化等主题形成连接。
+- 引入"面向 AI 的结构化标签体系"概念，标记了与 MOC 多标签实践的张力。
+- Obsidian 实体页更新，反映插件生态扩展（BRAT 分发、AI 集成场景）。
+
+### Open Questions / Next Actions
+
+- Claudian 对大型 vault（1000+ 笔记）的上下文处理策略是什么？是否支持 RAG？
+- 对比 Claudian vs Obsidian Copilot vs Smart Connections 的架构差异。
+- 是否值得将标签体系设计模板化，作为 vault 维护的可复用 checklist。
+- BRAT 安装的 beta 插件的安全模型和更新策略待调研。
+
 ## [2026-04-25] refactor | 默认中文输出规则
 
 ### Scope
@@ -126,6 +151,25 @@ Append-only operational timeline.
 
 - Verify whether `/opsx:ff` and `verify` are default OpenSpec commands or profile/scaffold-level wrappers.
 - Decide whether the shopping-cart edge-case checklist should become a reusable DoD template for stateful features.
+
+## [2026-04-29] refactor | 补录微信文章备用网址并去重校验
+
+### Scope
+
+- 更新来源页面: `wiki/sources/ai-coding-advanced-openspec-superpowers-deep-guide.md`
+- 更新导航页: `wiki/index.md`
+- 更新操作日志: `wiki/log.md`
+
+### Outcomes
+
+- 复核用户提供的微信链接 `https://mp.weixin.qq.com/s/HJi8n8t5RXFCevn0ezmLNg`，确认 vault 中已存在同标题来源页 `[[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]`，未新建重复页面。
+- 在来源页中补记既有 URL 与本次 Alternate URL，保留“同文多链接”痕迹，便于后续追溯。
+- 记录本次复核的限制：直连抓取命中 `secitptpage/verify`，因此未从该备用网址重新抽取正文。
+
+### Open Questions / Next Actions
+
+- 如需更强校验，可把文章原文保存到 `raw/sources/`，以便后续脱离微信验证页做稳定比对。
+- 若后续再次出现同标题多链接，可考虑给 source 页面增加固定的 “Known URLs” 字段规范。
 
 ## [2026-04-22] refactor | Initialize LLM wiki scaffold
 

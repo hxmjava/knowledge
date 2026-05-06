@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "d0fa3fd78686b278",
+        "id": "397e8c913a2dd6aa",
         "type": "tabs",
         "children": [
           {
-            "id": "adf4f13b0522e5e7",
+            "id": "cda3e6523676c4f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/index.md",
+                "file": "raw/sources/用OpenSpec Schema注入TDD到编码工作流.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "用OpenSpec Schema注入TDD到编码工作流"
+            }
+          },
+          {
+            "id": "b5079cb94b8c932a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/code-review-graph 让 AI 代码审查更精准更省 Token.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "code-review-graph 让 AI 代码审查更精准更省 Token"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,31 +204,7 @@
             }
           },
           {
-            "id": "1a5b059d360d0eef",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
-          },
-          {
-            "id": "19602ddeb89751f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/sources/claude-mem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "claude-mem"
-            }
-          },
-          {
-            "id": "c441e48ae6054623",
+            "id": "00ed289e67245a41",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -223,13 +214,23 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
+          },
+          {
+            "id": "c08dad96f74fbd44",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 980.5
+    "width": 818.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,46 +243,48 @@
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "obsidian42-brat:BRAT": false,
+      "claudian:Open Claudian": false
     }
   },
   "active": "b423256bc28594cf",
   "lastOpenFiles": [
-    "wiki/index.md",
-    "wiki/concepts/spec-driven-workflow-and-review-discipline.md",
-    "wiki/sources/ai-coding-advanced-openspec-superpowers-deep-guide.md",
-    "wiki/entities/openspec.md",
-    "wiki/sources/claude-mem.md",
-    "wiki/sources/openspec-superpowers-practice-guide.md",
-    "wiki/overview.md",
-    "wiki/sources/llm-wiki-pattern.md",
-    "wiki/log.md",
-    "wiki/analyses/personal-vs-enterprise-llm-workflows.md",
-    "wiki/sources/claude-code-enterprise-playbook.md",
+    "raw/sources/用OpenSpec Schema注入TDD到编码工作流.md",
+    "Clippings/code-review-graph 让 AI 代码审查更精准更省 Token.md",
+    "Clippings/code-review-graph 让 AI 代码审查更精准更省 Token.md.tmp.55148.1778052655503",
     "wiki/sources/ai-template2-scaffold.md",
-    "wiki/tasks/backlog.md",
-    "wiki/concepts/team-governance-for-ai-coding.md",
-    "wiki/entities/llm-agent.md",
-    "temp_wechat.html",
-    "AGENTS.md",
-    "wiki/quickstart.md",
-    "wiki/entities/harness.md",
-    "wiki/entities/github-actions.md",
-    "wiki/entities/claude-mem.md",
-    "wiki/entities/claude-code.md",
-    "wiki/entities/superpowers.md",
+    "wiki/sources/openspec-schema-tdd-workflow-injection.md",
+    "wiki/sources/openspec-superpowers-practice-guide.md",
+    "wiki/index.md",
+    "wiki/sources/openspec-superpowers-practice-guide.md.tmp.56236.1778052290523",
+    "wiki/sources/openspec-schema-tdd-workflow-injection.md.tmp.56236.1778052268547",
+    "wiki/sources/claude-mem.md",
+    "raw/sources/claudian-obsidian-plugin.md",
     "wiki/entities/obsidian.md",
+    "wiki/entities/claudian.md",
+    "wiki/sources/claudian-obsidian-plugin.md",
+    "wiki/index.md.tmp.56248.1778048680723",
+    "wiki/overview.md.tmp.56248.1778048663274",
+    "wiki/overview.md.tmp.56248.1778048663249",
+    "wiki/overview.md.tmp.56248.1778048663219",
+    "wiki/entities/obsidian.md.tmp.56248.1778048649394",
+    "wiki/entities/obsidian.md.tmp.56248.1778048640922",
+    "wiki/concepts/structured-tag-system-for-ai.md",
+    "wiki/concepts/structured-tag-system-for-ai.md.tmp.56248.1778048632374",
+    "wiki/concepts/vault-native-ai-assistant.md",
+    "wiki/entities/brat.md",
+    "wiki/entities/llm-agent.md",
+    "wiki/log.md",
+    "wiki/tasks/backlog.md",
+    "wiki/sources/llm-wiki-pattern.md",
+    "wiki/sources/claude-code-enterprise-playbook.md",
+    "wiki/sources/ai-coding-advanced-openspec-superpowers-deep-guide.md",
+    "wiki/entities/superpowers.md",
+    "wiki/entities/openspec.md",
+    "wiki/templates/analysis-template.md",
+    "wiki/entities/claude-mem.md",
     "raw/sources/claude-mem.md",
-    "wiki/concepts/progressive-disclosure-context-retrieval.md",
-    "wiki/concepts/persistent-agent-memory.md",
-    "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts",
-    "copilot",
-    "wiki/log.md.tmp.51612.1777015991525",
-    "wiki/index.md.tmp.51612.1777015979278",
-    "wiki/overview.md.tmp.51612.1777015958199",
-    "wiki/concepts/hooks-as-safety-net.md.tmp.51612.1777015943221",
-    "wiki/concepts/tdd-as-hard-gate.md.tmp.51612.1777015942168",
-    "wiki/concepts/specialized-agent-pattern.md.tmp.51612.1777015941125"
+    "AGENTS.md"
   ]
 }

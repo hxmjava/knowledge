@@ -2,7 +2,7 @@
 title: AI 编程进阶：OpenSpec + Superpowers 组合方案深度使用教程
 type: source
 status: active
-updated: 2026-04-25
+updated: 2026-04-29
 source_count: 1
 ---
 
@@ -13,6 +13,9 @@ source_count: 1
 - Author: 前端AI行走
 - Published: 2026-04-24
 - Format: WeChat article
+- Source URL: [https://mp.weixin.qq.com/s/092HGb6sEfz2Q-Pr-jEX2w](https://mp.weixin.qq.com/s/092HGb6sEfz2Q-Pr-jEX2w)
+- Alternate URL: [https://mp.weixin.qq.com/s/HJi8n8t5RXFCevn0ezmLNg](https://mp.weixin.qq.com/s/HJi8n8t5RXFCevn0ezmLNg)
+- Ingest Note: 2026-04-29 按用户提供链接复核时，直连返回 `secitptpage/verify` 验证页；当前页面仍按既有标题与已录入内容维持去重后的单一 source 页面。
 
 ## Summary
 

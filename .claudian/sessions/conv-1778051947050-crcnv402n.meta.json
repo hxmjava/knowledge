@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778051947050-crcnv402n",
+  "providerId": "claude",
+  "title": "帮我录入新文章：https://mp",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778051947050,
+  "updatedAt": 1778052307033,
+  "lastResponseAt": 1778052307033,
+  "sessionId": "4451f18e-d863-4233-a037-d1d50a66e9f9",
+  "providerState": {
+    "providerSessionId": "4451f18e-d863-4233-a037-d1d50a66e9f9"
+  },
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 873,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 56000,
+    "contextWindow": 200000,
+    "contextTokens": 56873,
+    "percentage": 28,
+    "contextWindowIsAuthoritative": true
+  }
+}
