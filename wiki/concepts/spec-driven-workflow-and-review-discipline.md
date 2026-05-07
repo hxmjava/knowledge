@@ -2,8 +2,8 @@
 title: Spec-Driven Workflow and Review Discipline
 type: concept
 status: active
-updated: 2026-04-25
-source_count: 3
+updated: 2026-05-07
+source_count: 5
 ---
 
 # Concept: Spec-Driven Workflow and Review Discipline
@@ -58,6 +58,8 @@ source_count: 3
 - [[sources/openspec-superpowers-practice-guide]]
 - [[sources/claude-code-enterprise-playbook]]
 - [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]
+- [[sources/superpowers-workflow-deconstruction]]
+- [[sources/agents-md-guide]]
 
 ## Related Pages
 
@@ -70,3 +72,4 @@ source_count: 3
 
 - 纪律越重，初期执行成本越高；建议先定义分级触发条件，避免把每个小修复都走完整链路。
 - 文档鼓励流程强制化，却也给了 `hotfix` 的裁剪口径；最终取舍依赖团队成熟度与风险容忍。
+- 工作流拆解将 Superpowers 的 14 个 skill 归为四层架构并提炼两条主链路，为"场景分级"提供了更清晰的分类依据——不同场景触发不同层级和链路。

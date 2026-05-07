@@ -17,6 +17,8 @@
 - [[sources/ai-template2-scaffold]] - 整合 OpenSpec、Superpowers 和 Claude Code Harness 的多模块 AI 协作脚手架。
 - [[sources/claude-mem]] - 面向 Claude Code 的持久化记忆压缩系统，使用 hooks、本地存储、搜索和渐进式披露。
 - [[sources/claudian-obsidian-plugin]] - Claudian 插件：将 Claude/Codex 接入 Obsidian 笔记库，实现 vault-native AI 问答、润色和模板触发。
+- [[sources/superpowers-workflow-deconstruction]] - Superpowers 14-skill 四层架构拆解与两条主链路（功能开发链、调试链），强调工程纪律而非功能堆叠。
+- [[sources/agents-md-guide]] - AGENTS.md 实践指南：地图而非手册原则、五大实践（仓库聚合、统一环境、验证闭环、自动化检查、参考项目引入）、Bad Case 驱动迭代。
 
 ## Entities
 
@@ -30,6 +32,9 @@
 - [[entities/claude-mem]] - Claude Code 插件，用于持久、可搜索的跨会话项目记忆。
 - [[entities/claudian]] - Obsidian 插件，将 Claude Code 和 Codex 接入笔记库，提供 vault-native AI 协作。
 - [[entities/brat]] - Obsidian 测试版插件安装工具，用于安装未上架社区市场的 beta 插件。
+- [[entities/cc-switch]] - 跨平台桌面 All-in-One 管理工具，统一管理 Claude Code、Codex、Gemini CLI 等 AI 编码 CLI 的 Provider、MCP、Prompts 与 Skills。
+- [[entities/agents-md]] - AI Coding 项目指令的开放标准文件（"给 AI 看的 README"），由 Agentic AI Foundation 托管。
+- [[entities/harness-creator]] - 一键生成 AGENTS.md 及配套 lint 脚本、Makefile、验证基础设施的 Skill。
 
 ## Concepts
 
@@ -49,6 +54,11 @@
 - [[concepts/progressive-disclosure-context-retrieval]] - 按层检索记忆，在连续性、成本和噪声之间取得平衡。
 - [[concepts/vault-native-ai-assistant]] - 将 AI 嵌入笔记工作区，笔记库直接作为上下文，消除切换摩擦。
 - [[concepts/structured-tag-system-for-ai]] - 为 AI 设计的结构化标签体系，标签质量决定 AI 回答质量。
+- [[concepts/verification-before-completion]] - 完成声明必须绑定新鲜验证结果，比 TDD 管控更靠后的交付关口。
+- [[concepts/map-not-manual]] - 项目上下文文件应充当导航地图而非完整手册，约 200 行，详细内容通过链接指向专项文档。
+- [[concepts/verification-loop]] - 「改→构建→启动→验证」端到端验证闭环，AI 自主执行的前提。
+- [[concepts/bad-case-driven-iteration]] - 从 AI 实际犯错出发逐条补充 AGENTS.md 规则，不一次写完。
+- [[concepts/reference-projects-as-context]] - 通过 git submodule 引入源码作为 AI 上下文，"源码即文档"。
 
 ## Analyses
 

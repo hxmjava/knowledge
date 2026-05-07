@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "397e8c913a2dd6aa",
+        "id": "77cc35b2be8ca810",
         "type": "tabs",
         "children": [
           {
-            "id": "cda3e6523676c4f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/sources/用OpenSpec Schema注入TDD到编码工作流.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "用OpenSpec Schema注入TDD到编码工作流"
-            }
-          },
-          {
-            "id": "b5079cb94b8c932a",
+            "id": "656bcc56fd46a42b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,9 +20,107 @@
               "icon": "lucide-file",
               "title": "code-review-graph 让 AI 代码审查更精准更省 Token"
             }
+          },
+          {
+            "id": "95b4ae5b2e014cb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/sources/agents-md-guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "agents-md-guide"
+            }
+          },
+          {
+            "id": "061aa183682af03b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/entities/agents-md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "agents-md"
+            }
+          },
+          {
+            "id": "6f21f95926952239",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/verification-loop.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "verification-loop"
+            }
+          },
+          {
+            "id": "63d8420ecb5fc8ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/reference-projects-as-context.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "reference-projects-as-context"
+            }
+          },
+          {
+            "id": "15ef1f3158eb9fa6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/entities/harness-creator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "harness-creator"
+            }
+          },
+          {
+            "id": "65d5abe01e9c479f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/entities/agents-md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "agents-md"
+            }
+          },
+          {
+            "id": "4d923f3d85c1a259",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/agents-md-guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "agents-md-guide"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -250,41 +334,44 @@
   },
   "active": "b423256bc28594cf",
   "lastOpenFiles": [
-    "raw/sources/用OpenSpec Schema注入TDD到编码工作流.md",
+    "wiki/index.md",
+    "raw/sources/agents-md-guide.md",
+    "wiki/entities/agents-md.md",
+    "wiki/entities/harness-creator.md",
+    "wiki/concepts/reference-projects-as-context.md",
+    "wiki/concepts/verification-loop.md",
     "Clippings/code-review-graph 让 AI 代码审查更精准更省 Token.md",
-    "Clippings/code-review-graph 让 AI 代码审查更精准更省 Token.md.tmp.55148.1778052655503",
+    "Clippings/用 Excalidraw 在 Obsidian 里画流程图、架构图：从入门到嵌入笔记.md",
+    "Clippings/assets/excalidraw-obsidian-4.png",
+    "Clippings/assets/excalidraw-obsidian-3.png",
+    "Clippings/assets/excalidraw-obsidian-2.png",
+    "Clippings/assets/excalidraw-obsidian-1.png",
+    "wiki/sources/superpowers-workflow-deconstruction.md",
+    "wiki/log.md.tmp.60340.1778124249675",
+    "wiki/index.md.tmp.60340.1778124225790",
+    "wiki/index.md.tmp.60340.1778124225771",
+    "wiki/index.md.tmp.60340.1778124225736",
+    "wiki/overview.md.tmp.60340.1778124209319",
+    "wiki/overview.md.tmp.60340.1778124209306",
+    "wiki/overview.md.tmp.60340.1778124209283",
+    "wiki/overview.md.tmp.60340.1778124209259",
+    "wiki/overview.md.tmp.60340.1778124209225",
+    "wiki/entities/harness.md.tmp.60340.1778124117101",
+    "wiki/concepts/bad-case-driven-iteration.md",
+    "wiki/concepts/map-not-manual.md",
+    "wiki/sources/agents-md-guide.md",
     "wiki/sources/ai-template2-scaffold.md",
+    "Excalidraw/Drawing 2026-05-06 19.52.55.excalidraw.md",
+    "wiki/concepts/verification-before-completion.md",
+    "raw/sources/superpowers-workflow-deconstruction.md",
+    "wiki/entities/llm-agent.md",
+    "wiki/entities/cc-switch.md",
+    "wiki/concepts/progressive-disclosure-context-retrieval.md",
+    "wiki/sources/claude-mem.md",
+    "raw/sources/用OpenSpec Schema注入TDD到编码工作流.md",
     "wiki/sources/openspec-schema-tdd-workflow-injection.md",
     "wiki/sources/openspec-superpowers-practice-guide.md",
-    "wiki/index.md",
-    "wiki/sources/openspec-superpowers-practice-guide.md.tmp.56236.1778052290523",
-    "wiki/sources/openspec-schema-tdd-workflow-injection.md.tmp.56236.1778052268547",
-    "wiki/sources/claude-mem.md",
     "raw/sources/claudian-obsidian-plugin.md",
-    "wiki/entities/obsidian.md",
-    "wiki/entities/claudian.md",
-    "wiki/sources/claudian-obsidian-plugin.md",
-    "wiki/index.md.tmp.56248.1778048680723",
-    "wiki/overview.md.tmp.56248.1778048663274",
-    "wiki/overview.md.tmp.56248.1778048663249",
-    "wiki/overview.md.tmp.56248.1778048663219",
-    "wiki/entities/obsidian.md.tmp.56248.1778048649394",
-    "wiki/entities/obsidian.md.tmp.56248.1778048640922",
-    "wiki/concepts/structured-tag-system-for-ai.md",
-    "wiki/concepts/structured-tag-system-for-ai.md.tmp.56248.1778048632374",
-    "wiki/concepts/vault-native-ai-assistant.md",
-    "wiki/entities/brat.md",
-    "wiki/entities/llm-agent.md",
-    "wiki/log.md",
-    "wiki/tasks/backlog.md",
-    "wiki/sources/llm-wiki-pattern.md",
-    "wiki/sources/claude-code-enterprise-playbook.md",
-    "wiki/sources/ai-coding-advanced-openspec-superpowers-deep-guide.md",
-    "wiki/entities/superpowers.md",
-    "wiki/entities/openspec.md",
-    "wiki/templates/analysis-template.md",
-    "wiki/entities/claude-mem.md",
-    "raw/sources/claude-mem.md",
-    "AGENTS.md"
+    "wiki/entities/obsidian.md"
   ]
 }

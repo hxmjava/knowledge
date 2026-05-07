@@ -1,0 +1,33 @@
+{
+  "id": "conv-1778060062556-uqqnypl3b",
+  "providerId": "claude",
+  "title": "帮我录入项目：https://github",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778060062556,
+  "updatedAt": 1778122764767,
+  "lastResponseAt": 1778060174538,
+  "sessionId": "bfe7d89b-ce11-4f6f-b0a6-6ca2a153048c",
+  "providerState": {
+    "providerSessionId": "bfe7d89b-ce11-4f6f-b0a6-6ca2a153048c",
+    "subagentData": {
+      "call_1972b17084574fcea5de5c39": {
+        "id": "call_1972b17084574fcea5de5c39",
+        "description": "Find project notes pattern",
+        "prompt": "Explore the Obsidian vault at F:\\obsidian\\knowledge to find how projects are organized. Look for:\n1. Any folder named \"projects\" or similar\n2. Existing project notes - find a few examples and read them to understand the template/format used\n3. Look for any project template files\n\nReport the folder structure, example project note contents (full text), and any template found. Be thorough - check common locations like \"projects/\", \"10.projects/\", \"00 - projects/\", etc. Also search for files with \"project\" in their name or path.",
+        "status": "completed",
+        "toolCalls": [],
+        "isExpanded": false,
+        "result": "API Error: 400 {\"error\":{\"code\":\"400\",\"message\":\"Not supported model claude-haiku-4-5-20251001\",\"param\":\"Param Incorrect\"}}"
+      }
+    }
+  },
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 20131,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 20131,
+    "percentage": 10
+  }
+}

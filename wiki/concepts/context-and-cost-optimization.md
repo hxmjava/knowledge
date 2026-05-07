@@ -2,8 +2,8 @@
 title: Context and Cost Optimization
 type: concept
 status: active
-updated: 2026-04-25
-source_count: 2
+updated: 2026-05-07
+source_count: 3
 ---
 
 # Concept: Context and Cost Optimization
@@ -28,13 +28,16 @@ source_count: 2
 
 - [[sources/claude-code-enterprise-playbook]]
 - [[sources/claude-mem]]
+- [[sources/agents-md-guide]]
 
 ## Related Pages
 
 - [[entities/claude-code]]
+- [[entities/agents-md]]
 - [[concepts/team-governance-for-ai-coding]]
 - [[concepts/ingest-query-lint-loop]]
 - [[concepts/progressive-disclosure-context-retrieval]]
+- [[concepts/map-not-manual]]
 
 ## Contradictions / Nuance
 

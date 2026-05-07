@@ -2,6 +2,61 @@
 
 Append-only operational timeline.
 
+## [2026-05-07] ingest | AGENTS.md 实践指南
+
+### Scope
+
+- 保存 raw 来源: `raw/sources/agents-md-guide.md`
+- 新增来源页面: `wiki/sources/agents-md-guide.md`
+- 新增实体页面: `wiki/entities/agents-md.md`, `wiki/entities/harness-creator.md`
+- 新增概念页面: `wiki/concepts/map-not-manual.md`, `wiki/concepts/verification-loop.md`, `wiki/concepts/bad-case-driven-iteration.md`, `wiki/concepts/reference-projects-as-context.md`
+- 更新实体页面: `wiki/entities/claude-code.md`, `wiki/entities/harness.md`
+- 更新概念页面: `wiki/concepts/progressive-disclosure-context-retrieval.md`, `wiki/concepts/context-and-cost-optimization.md`, `wiki/concepts/spec-driven-workflow-and-review-discipline.md`, `wiki/concepts/verification-before-completion.md`
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`
+
+### Outcomes
+
+- 完成微信文章「一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南」（Kirito的技术分享，2026-04-20）的录入。
+- 新增 AGENTS.md 实体——记录其作为事实标准的前世今生（Anthropic CLAUDE.md → 工具碎片化 → AMP+OpenAI 推动统一 → Agentic AI Foundation 托管）。
+- 提炼"地图，而非手册"概念：与既有渐进式上下文检索共享底层理念，但适用层次不同（项目上下文文件 vs 记忆系统）。
+- 新增"验证闭环"概念：「改→构建→启动→验证」端到端循环，包含 curl 规范、Agent Browser 验证和自动化检查，与 verification-before-completion 互补。
+- 新增"Bad Case 驱动迭代"和"参考项目引入"两个实践概念。
+- 新增 harness-creator 实体，记录其作为 AGENTS.md 一键脚手架工具的角色。
+- 标注了本文与 [[sources/ai-template2-scaffold]] 在 AGENTS.md 丰富度上的张力（200 行精简地图 vs 多层 harness 配置）。
+
+### Open Questions / Next Actions
+
+- AGENTS.md 的 200 行建议在大型 monorepo 中的适用性——OpenAI 88 个嵌套 AGENTS.md 的模式是否可复制。
+- harness-creator 生成质量和技术栈覆盖范围待评估。
+- "源码即文档"策略在上下文窗口有限的模型中的检索效率问题。
+- 验证闭环基础设施的最小可行子集——哪些是必选项、哪些是增强项。
+
+## [2026-05-07] ingest | Superpowers 工作流拆解
+
+### Scope
+
+- 保存 raw 来源: `raw/sources/superpowers-workflow-deconstruction.md`
+- 新增来源页面: `wiki/sources/superpowers-workflow-deconstruction.md`
+- 新增概念页面: `wiki/concepts/verification-before-completion.md`
+- 更新实体页面: `wiki/entities/superpowers.md`, `wiki/entities/claude-code.md`
+- 更新概念页面: `wiki/concepts/spec-driven-workflow-and-review-discipline.md`, `wiki/concepts/tdd-as-hard-gate.md`
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`
+
+### Outcomes
+
+- 完成微信文章「我把 Claude Code 的 Superpowers 全拆了一遍，终于看懂它真正厉害的地方」（地瓜老爸，2026-03-27）的录入。
+- 将 Superpowers 的 14 个 skill 解析为四层架构（总入口/流程控制、实施执行/环境隔离、质量保障/问题处理、收尾/元能力），补充到实体页。
+- 提炼两条主链路：功能开发链（brainstorming → plan → worktree → execute → finish）和调试链（systematic-debugging → TDD → verification）。
+- 新增 "verification-before-completion" 概念：完成声明必须绑定新鲜验证结果，与 TDD 硬门禁互补但不等价（TDD 管开发过程，此概念管交付关口）。
+- 标注了本文与 [[sources/ai-template2-scaffold]] 在"最该默认启用的底线规则"上的优先级差异（本文偏完成纪律，脚手架偏开发纪律）。
+
+### Open Questions / Next Actions
+
+- 14 个 skill 是否全部默认安装，还是按需加载？文章未做说明。
+- 功能开发链路中发现 bug 需要切换到调试链路时，切换机制是什么？
+- "新鲜"验证结果的精确定义（时间窗口/变更范围阈值）待明确。
+- 是否值得将四层架构映射到 harness 的命令分层，形成"配置即文档"。
+
 ## [2026-05-06] ingest | Claudian Obsidian 插件
 
 ### Scope

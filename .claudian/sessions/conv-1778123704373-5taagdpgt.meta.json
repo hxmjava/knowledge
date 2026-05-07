@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778123704373-5taagdpgt",
+  "providerId": "claude",
+  "title": "@AGENTS",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778123704373,
+  "updatedAt": 1778124331312,
+  "lastResponseAt": 1778124331312,
+  "sessionId": "95553589-c5af-4e46-9a10-1208fc43442f",
+  "providerState": {
+    "providerSessionId": "95553589-c5af-4e46-9a10-1208fc43442f"
+  },
+  "currentNote": "wiki/sources/superpowers-workflow-deconstruction.md",
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 320,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 73216,
+    "contextWindow": 200000,
+    "contextTokens": 73536,
+    "percentage": 37,
+    "contextWindowIsAuthoritative": true
+  }
+}
