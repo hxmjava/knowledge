@@ -1,0 +1,35 @@
+{
+  "id": "conv-1778201849805-oob7wm8ia",
+  "providerId": "claude",
+  "title": "@Clippings/Vibe-Coding规范开发指南",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778201849806,
+  "updatedAt": 1778292440081,
+  "lastResponseAt": 1778292440081,
+  "sessionId": "56c7c016-7d64-4a7a-93fb-22c07b71190e",
+  "providerState": {
+    "providerSessionId": "56c7c016-7d64-4a7a-93fb-22c07b71190e",
+    "subagentData": {
+      "call_5d6257f2ce614830a235eb3a": {
+        "id": "call_5d6257f2ce614830a235eb3a",
+        "description": "Find Excalidraw patterns in vault",
+        "prompt": "Quick search: Find any Excalidraw files (.excalidraw or .md files with excalidraw content) in the vault at F:\\obsidian\\knowledge. Also check if there's an Excalidraw plugin folder or templates. Report file paths and a sample of how Excalidraw diagrams are embedded in notes.",
+        "status": "completed",
+        "toolCalls": [],
+        "isExpanded": false,
+        "result": "API Error: 400 {\"error\":{\"code\":\"400\",\"message\":\"Not supported model claude-haiku-4-5-20251001\",\"param\":\"Param Incorrect\"}}"
+      }
+    }
+  },
+  "currentNote": "Clippings/Vibe-Coding规范开发.md",
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 677,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 92864,
+    "contextWindow": 200000,
+    "contextTokens": 93541,
+    "percentage": 47,
+    "contextWindowIsAuthoritative": true
+  }
+}

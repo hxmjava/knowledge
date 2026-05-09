@@ -44,17 +44,17 @@ service impl --> service api + common
 
 ### 3.1 斜杠命令（9 个）
 
-| 命令 | 用途 |
-|------|------|
-| `/proj-dev` | 日常开发入口：定位层→选路径→暴露风险→同步规格→验证→终审 |
-| `/proj-onboard` | 新人上手指南：根据场景推荐最佳入口命令 |
-| `/proj-module-locate` | 模块定位：判断改动属于哪层哪模块 |
-| `/proj-change-apply` | OpenSpec 变更实现：绑定 TDD 铁律、分层映射、规格同步 |
-| `/proj-spec-sync` | 规格同步：实现偏离时同步 proposal/design/tasks/spec |
-| `/proj-verify` | 验证收口：推荐或执行最小足够验证命令 |
-| `/proj-review-risk` | 风险评审：针对高风险路径的专项审查 |
-| `/proj-review-complete` | 完成评审：终验门，检查层/规格/验证/风险 |
-| `/proj-test-bootstrap` | 测试基建搭建：为无测试模块搭最小骨架 |
+| 命令                      | 用途                                      |
+| ----------------------- | --------------------------------------- |
+| `/proj-dev`             | 日常开发入口：定位层→选路径→暴露风险→同步规格→验证→终审          |
+| `/proj-onboard`         | 新人上手指南：根据场景推荐最佳入口命令                     |
+| `/proj-module-locate`   | 模块定位：判断改动属于哪层哪模块                        |
+| `/proj-change-apply`    | OpenSpec 变更实现：绑定 TDD 铁律、分层映射、规格同步       |
+| `/proj-spec-sync`       | 规格同步：实现偏离时同步 proposal/design/tasks/spec |
+| `/proj-verify`          | 验证收口：推荐或执行最小足够验证命令                      |
+| `/proj-review-risk`     | 风险评审：针对高风险路径的专项审查                       |
+| `/proj-review-complete` | 完成评审：终验门，检查层/规格/验证/风险                   |
+| `/proj-test-bootstrap`  | 测试基建搭建：为无测试模块搭最小骨架                      |
 
 ### 3.2 分层 Agent（4 个）
 

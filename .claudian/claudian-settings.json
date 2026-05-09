@@ -2,7 +2,7 @@
   "userName": "",
   "permissionMode": "yolo",
   "model": "mimo-v2.5-pro",
-  "thinkingBudget": "medium",
+  "thinkingBudget": "low",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -31,7 +31,7 @@
       "enableOpus1M": false,
       "enableSonnet1M": false,
       "customModels": "mimo-v2.5-pro",
-      "lastModel": "opus",
+      "lastModel": "sonnet",
       "environmentVariables": "",
       "environmentHash": ""
     },
@@ -70,7 +70,7 @@
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {
-    "claude": "medium"
+    "claude": "low"
   },
   "savedProviderPermissionMode": {
     "claude": "yolo"
