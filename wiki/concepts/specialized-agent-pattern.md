@@ -3,8 +3,8 @@ name: Specialized Agent Pattern
 description: Using layer-specific AI agents and domain-specific checker skills instead of a single general-purpose agent for all development tasks.
 type: concept
 status: draft
-updated: 2026-04-24
-source_count: 1
+updated: 2026-05-09
+source_count: 2
 ---
 
 # Concept: Specialized Agent Pattern
@@ -40,11 +40,14 @@ source_count: 1
 ## Supporting Sources
 
 - [[sources/ai-template2-scaffold]]
+- [[sources/fireworks-tech-graph]]
 
 ## Related Pages
 
 - [[entities/harness]]
+- [[entities/fireworks-tech-graph]]
 - [[concepts/layered-project-harness]]
+- [[concepts/diagram-generation-as-skill]]
 
 ## Contradictions / Nuance
 

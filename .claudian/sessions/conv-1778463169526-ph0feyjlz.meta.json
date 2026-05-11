@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778463169526-ph0feyjlz",
+  "providerId": "claude",
+  "title": "@AGENTS",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778463169527,
+  "updatedAt": 1778463516702,
+  "lastResponseAt": 1778463516702,
+  "sessionId": "9ed9f2c0-f557-49a8-a0e2-95b4808c1e48",
+  "providerState": {
+    "providerSessionId": "9ed9f2c0-f557-49a8-a0e2-95b4808c1e48"
+  },
+  "currentNote": "AGENTS.md",
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 349,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 66240,
+    "contextWindow": 200000,
+    "contextTokens": 66589,
+    "percentage": 33,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -2,6 +2,115 @@
 
 Append-only operational timeline.
 
+## [2026-05-11] ingest | 企业级AI Coding五范式组合实战
+
+### Scope
+
+- 保存 raw 来源: `raw/sources/ai-coding-paradigms-618-practice.md`
+- 新增来源页面: `wiki/sources/ai-coding-paradigms-618-practice.md`
+- 新增实体页面: `wiki/entities/lv-zhaobo.md`, `wiki/entities/muran-cloud.md`
+- 新增概念页面: `wiki/concepts/spec-coding.md`, `wiki/concepts/glue-coding.md`, `wiki/concepts/vibe-coding.md`, `wiki/concepts/paradigm-composition.md`
+- 更新概念页面: `wiki/concepts/tdd-as-hard-gate.md`（补充"基于Spec的TDD"变体），`wiki/concepts/ai-ci-cd-automation.md`（补充Harness范式视角）
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`
+
+### Outcomes
+
+- 完成微信文章「1个场景(618促销)5种范式(Spec/Vibe/Glue/TDD/Harness) ，企业级AI Coding经验分享」（沐然云计算/吕昭波，2026-05-10）的录入。
+- 首次引入"多范式组合"视角：同一项目不同阶段可灵活切换 Spec Coding → TDD → Glue Coding → Harness → Vibe Coding。
+- 新增4个范式概念页（Spec Coding、Glue Coding、Vibe Coding、范式组合），TDD 和 Harness 已有对应概念页（tdd-as-hard-gate、ai-ci-cd-automation）进行了交叉更新。
+- 新增作者实体（吕昭波）和发布平台实体（沐然云计算），扩展来源多元化。
+- 本文的关键数据：代码复用率70%、开发周期2周、测试覆盖率85%、部署<10分钟、系统可用性99.95%。
+- 标注了与现有 wiki 概念的张力：Spec Coding vs OpenSpec（需求规格 vs 变更追踪）、Glue Coding vs reference-projects-as-context（代码级复用 vs 知识级复用）、Harness 范式 vs AI-CI-CD-Automation（框架限制 vs 流水线控制）。
+
+### Open Questions / Next Actions
+
+- Glue Coding 的技术债务管理策略——缺少明确的重构触发点和债务度量标准。
+- Vibe Coding 在低流量场景的适用性——A/B测试需足够样本量。
+- 五范式是否覆盖所有企业级AI Coding场景？是否存在遗漏范式？
+- 范式组合的切换触发条件——缺少从一种范式切换到另一种的判断标准。
+- 作者是否有更深入的单一范式实战文章可供进一步录入。
+
+## [2026-05-11] ingest | Superpowers 深度实战指南
+
+### Scope
+
+- 保存 raw 来源: `raw/sources/superpowers-deep-practice-guide.md`
+- 新增来源页面: `wiki/sources/superpowers-deep-practice-guide.md`
+- 更新实体页面: `wiki/entities/superpowers.md`（补充多平台接入表、插件系统技术细节、技能设计哲学、性能约束、指令优先级）
+- 更新实体页面: `wiki/entities/claude-code.md`（补充 SessionStart hook 引导注入路径说明）
+- 更新概念页面: `wiki/concepts/hooks-as-safety-net.md`（补充 Superpowers SessionStart hook 作为行为约束注入的变体）
+- 更新概念页面: `wiki/concepts/bad-case-driven-iteration.md`（补充 Superpowers "合理化防范"机制作为并行模式）
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`, `wiki/tasks/backlog.md`
+
+### Outcomes
+
+- 完成微信文章「Superpowers 深度实战指南：从入门到精通」（AgentBuff，2026-05-08）的录入。
+- 这是 vault 中第 4 篇与 Superpowers 相关的来源，也是迄今最全面的一篇——覆盖架构全景、8 个平台安装配置、14 个 skill 的逐一深度解析。
+- Superpowers 实体页大幅扩充：新增多平台接入表（8 平台）、插件系统技术细节（`run-hook.cmd` 多语言脚本、版本管理机制）、技能设计哲学（铁律模式、合理化防范、CSO 搜索优化）、性能词数约束和指令优先级层次。
+- Claude Code 实体页补充了 SessionStart hook 作为 Superpowers 主要接入路径的技术细节。
+- 新增 hooks-as-safety-net 概念页的"Superpowers SessionStart Hook"变体——区分了安全提醒型 hook 和行为约束注入型 hook。
+- 新增 bad-case-driven-iteration 概念页的"合理化防范"并行模式——Superpowers 在技能文档中预见并预堵代理合理化借口，与 AGENTS.md 的事后 bad case 补充形成互补。
+- 本文的关键洞察："using-superpowers 才是所有平台共享的行为入口；hook、插件 transform、context file 只是不同 harness 的装配层"——统一的是行为约束模型，不是技术接入点。
+
+### Open Questions / Next Actions
+
+- 8 个平台的安装方式是否全部经过实际验证？特别关注 Factory Droid 和 GitHub Copilot CLI。
+- `run-hook.cmd` 在 Windows 找不到 bash 时静默退出 0——是否应改为警告而非静默失败？
+- Superpowers 技能词数约束（<150/<200/<500 词）在实际仓库中的遵守情况。
+- "合理化防范"机制是否值得抽象为自定义技能的可复用设计模板。
+- brainstorming 的 HARD-GATE（"在呈现设计并获得用户批准之前不得调用实现技能"）与 `/opsx:ff` 快速入门路径的张力待澄清。
+
+## [2026-05-09] ingest | fireworks-tech-graph 声明式技术图生成 Skill
+
+### Scope
+
+- 保存 raw 来源: `raw/sources/fireworks-tech-graph.md`
+- 下载文章图片: `raw/assets/fireworks-tech-graph-banner.png`
+- 新增来源页面: `wiki/sources/fireworks-tech-graph.md`
+- 新增实体页面: `wiki/entities/fireworks-tech-graph.md`
+- 新增概念页面: `wiki/concepts/diagram-generation-as-skill.md`
+- 更新实体页面: `wiki/entities/claude-code.md`（补充 Skill 生态向非代码产出扩展的证据）
+- 更新概念页面: `wiki/concepts/specialized-agent-pattern.md`（补充技术图生成作为领域特化 Skill 的实例）
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`
+
+### Outcomes
+
+- 完成微信文章「fireworks-tech-graph ：把技术架构图生成这件事做成一个可复用 Skill」（AI技术小林，2026-04-16）的录入。
+- 新增 fireworks-tech-graph 实体——记录其作为 Claude Code Skill 的五层架构（输入描述→图类型识别→风格系统→语义表达→输出与验证）、14 种图类型和 7 种视觉风格。
+- 新增"声明式技术图生成"概念——将技术图创建从手工拖拽转变为自然语言描述驱动的工程化 Skill 能力，与 specialized-agent-pattern 形成互补。
+- 将此来源接入 Claude Code 实体，展示 Skill 生态从代码质量检查（ORM/API checker）到领域特化非代码产出（技术图生成）的边界扩展。
+- 标注了与 Mermaid（快速表达但视觉受限）和 draw.io（强大但手工成本高）的定位差异。
+
+### Open Questions / Next Actions
+
+- fireworks-tech-graph 的图类型识别准确率如何？是否支持混合类型？
+- 大型系统（20+ 组件）的 SVG 布局质量评估。
+- Windows 环境下 rsvg-convert 的替代方案。
+- Claude Code Skill 生态中还有哪些非代码产出领域值得封装为 Skill（如文档翻译、幻灯片生成、数据可视化）。
+
+## [2026-05-09] ingest | Figma Personal Access Tokens 管理
+
+### Scope
+
+- 保存 raw 来源: `raw/sources/figma-personal-access-tokens.md`
+- 新增来源页面: `wiki/sources/figma-personal-access-tokens.md`
+- 新增实体页面: `wiki/entities/figma.md`
+- 更新概念页面: `wiki/concepts/policy-driven-tool-permissions.md`（补充 Figma 全量 PAT 作为权限模型光谱的另一端）
+- 更新 hub 页面: `wiki/overview.md`, `wiki/index.md`
+
+### Outcomes
+
+- 完成 Figma 官方帮助文档「Manage personal access tokens」的录入。
+- 新增 Figma 实体——记录其作为协作设计平台的产品线定位和 API 令牌模型。
+- 将 Figma PAT 的"全有或全无"安全模型接入既有的 policy-driven-tool-permissions 概念，形成权限粒度对比（Claude Code 的 Allow/Ask/Deny 三级模型 vs Figma 的全量令牌）。
+- 标注文档内部的张力：声称支持 scope 赋值与"access all files and data"之间的矛盾。
+
+### Open Questions / Next Actions
+
+- Figma PAT 的 scope 具体有哪些级别？是否支持只读令牌？需查阅 Figma developer docs。
+- Figma 是否支持 OAuth App 作为 PAT 的替代方案，提供更细粒度的授权？
+- 在设计-to-code 的 CI/CD 管道中（如 Figma MCP server），PAT 的安全最佳实践是什么？
+
 ## [2026-05-07] ingest | AGENTS.md 实践指南
 
 ### Scope

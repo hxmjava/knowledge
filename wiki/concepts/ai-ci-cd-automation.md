@@ -2,8 +2,8 @@
 title: AI CI CD Automation
 type: concept
 status: active
-updated: 2026-04-22
-source_count: 1
+updated: 2026-05-11
+source_count: 2
 ---
 
 # Concept: AI CI CD Automation
@@ -26,6 +26,7 @@ source_count: 1
 ## Supporting Sources
 
 - [[sources/claude-code-enterprise-playbook]]
+- [[sources/ai-coding-paradigms-618-practice]]
 
 ## Related Pages
 
@@ -36,3 +37,4 @@ source_count: 1
 ## Contradictions / Nuance
 
 - 自动化结果并不等于合规结论；关键业务与高风险变更仍需人工复核。
+- [[sources/ai-coding-paradigms-618-practice]] 将 CI/CD 自动化提升为独立的"Harness 范式"（自动化先行，交付驱动），主张 Harness 不仅做 CI/CD，更是"限制交付边界的框架"——比本概念定义的"流水线内质量控制节点"更宽泛。两者有交集但视角不同。

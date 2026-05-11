@@ -2,7 +2,7 @@
 title: Backlog
 type: task
 status: active
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 # Backlog
@@ -17,6 +17,8 @@ updated: 2026-05-07
 
 ## 中优先级
 
+- 评估 Superpowers 8 个平台安装方式的实际验证程度，特别关注 Factory Droid 和 GitHub Copilot CLI 的成熟度。
+- 评估"合理化防范"机制（Red Flags + Rationalizations 表）是否值得抽象为自定义技能的可复用设计模板。
 - 添加周期性 lint 节奏（每周或每 N 次 ingest）。
 - 评估简单 grep/index 搜索是否仍然足够。
 - 对比 Claude-Mem 式自动记忆与本 vault 的人工整理 wiki 编译流程。

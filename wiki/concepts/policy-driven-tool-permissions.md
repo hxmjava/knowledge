@@ -2,8 +2,8 @@
 title: Policy Driven Tool Permissions
 type: concept
 status: active
-updated: 2026-04-22
-source_count: 1
+updated: 2026-05-09
+source_count: 2
 ---
 
 # Concept: Policy Driven Tool Permissions
@@ -26,13 +26,16 @@ source_count: 1
 ## Supporting Sources
 
 - [[sources/claude-code-enterprise-playbook]]
+- [[sources/figma-personal-access-tokens]] — Figma PAT 的"全有或全无"模型是权限粒度光谱的另一端
 
 ## Related Pages
 
 - [[concepts/team-governance-for-ai-coding]]
 - [[entities/claude-code]]
 - [[entities/github-actions]]
+- [[entities/figma]]
 
 ## Contradictions / Nuance
 
 - 过宽权限提升效率但扩大风险；过严权限增强安全但可能压低交付速度。
+- Figma PAT 声称支持 scope 赋值，但同时文档声明"access all files and data"——scope 可能控制操作类型（读/写）而非数据范围，需查阅 developer docs 确认。
