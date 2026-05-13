@@ -1,0 +1,33 @@
+{
+  "id": "conv-1778652637378-i5qa0tzy6",
+  "providerId": "claude",
+  "title": "@AGENTS",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778652637378,
+  "updatedAt": 1778653361158,
+  "lastResponseAt": 1778653361158,
+  "sessionId": "32331fd6-e141-405f-bc8f-6298afe4e673",
+  "providerState": {
+    "providerSessionId": "32331fd6-e141-405f-bc8f-6298afe4e673",
+    "subagentData": {
+      "call_2cf083d63e3042c3ada0c79a": {
+        "id": "call_2cf083d63e3042c3ada0c79a",
+        "description": "Read existing wiki pages",
+        "prompt": "Read the following files and return their full content (or a summary if very long). I need to understand what's already in them to update them with new source material.\n\n1. F:\\obsidian\\knowledge\\wiki\\concepts\\persistent-agent-memory.md\n2. F:\\obsidian\\knowledge\\wiki\\concepts\\behavioral-contract-vs-prompt.md\n3. F:\\obsidian\\knowledge\\wiki\\concepts\\hooks-as-safety-net.md\n4. F:\\obsidian\\knowledge\\wiki\\concepts\\verification-before-completion.md\n5. F:\\obsidian\\knowledge\\wiki\\concepts\\context-and-cost-optimization.md\n6. F:\\obsidian\\knowledge\\wiki\\concepts\\map-not-manual.md\n7. F:\\obsidian\\knowledge\\wiki\\entities\\claude-code.md\n8. F:\\obsidian\\knowledge\\wiki\\tasks\\backlog.md\n9. F:\\obsidian\\knowledge\\wiki\\templates\\source-template.md\n10. F:\\obsidian\\knowledge\\wiki\\templates\\entity-template.md\n11. F:\\obsidian\\knowledge\\wiki\\templates\\concept-template.md\n\nReport the full content of each file.",
+        "status": "completed",
+        "toolCalls": [],
+        "isExpanded": false,
+        "result": "API Error: 400 {\"error\":{\"code\":\"400\",\"message\":\"Param Incorrect\",\"param\":\"Not supported model claude-haiku-4-5-20251001\"}}"
+      }
+    }
+  },
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 1025,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 71360,
+    "contextWindow": 200000,
+    "contextTokens": 72385,
+    "percentage": 36
+  }
+}

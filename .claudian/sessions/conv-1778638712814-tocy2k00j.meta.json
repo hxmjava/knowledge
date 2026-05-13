@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778638712814-tocy2k00j",
+  "providerId": "claude",
+  "title": "@AGENTS",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778638712814,
+  "updatedAt": 1778639301320,
+  "lastResponseAt": 1778639301320,
+  "sessionId": "1fde43a7-b45b-4b39-8fde-ff85281ad1a5",
+  "providerState": {
+    "providerSessionId": "1fde43a7-b45b-4b39-8fde-ff85281ad1a5"
+  },
+  "currentNote": "Clippings/如何构建一个好的 AGENTS.md：AI 编码 Agent 的项目级行为规范最佳实践.md",
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 402,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 83968,
+    "contextWindow": 200000,
+    "contextTokens": 84370,
+    "percentage": 42,
+    "contextWindowIsAuthoritative": true
+  }
+}

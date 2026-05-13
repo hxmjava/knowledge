@@ -2,8 +2,8 @@
 title: Spec-Driven Workflow and Review Discipline
 type: concept
 status: active
-updated: 2026-05-07
-source_count: 5
+updated: 2026-05-13
+source_count: 6
 ---
 
 # Concept: Spec-Driven Workflow and Review Discipline
@@ -60,6 +60,7 @@ source_count: 5
 - [[sources/ai-coding-advanced-openspec-superpowers-deep-guide]]
 - [[sources/superpowers-workflow-deconstruction]]
 - [[sources/agents-md-guide]]
+- [[sources/vibecoding-tdd-atdd-bdd-ddd-sdd]]
 
 ## Related Pages
 
@@ -67,6 +68,7 @@ source_count: 5
 - [[entities/superpowers]]
 - [[concepts/team-governance-for-ai-coding]]
 - [[concepts/ingest-query-lint-loop]]
+- [[concepts/sdd-spec-driven-development]]（SDD 的"规格即真理"理念与本概念的"规格先行+变更追踪"理念相近但定位不同）
 
 ## Contradictions / Nuance
 

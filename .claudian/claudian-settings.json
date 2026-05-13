@@ -2,7 +2,7 @@
   "userName": "",
   "permissionMode": "yolo",
   "model": "mimo-v2.5-pro",
-  "thinkingBudget": "low",
+  "thinkingBudget": "xhigh",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -70,7 +70,7 @@
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {
-    "claude": "low"
+    "claude": "xhigh"
   },
   "savedProviderPermissionMode": {
     "claude": "yolo"

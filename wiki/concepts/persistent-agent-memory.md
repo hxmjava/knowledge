@@ -2,8 +2,8 @@
 title: 持久化 Agent 记忆
 type: concept
 status: active
-updated: 2026-04-25
-source_count: 1
+updated: 2026-05-13
+source_count: 2
 ---
 
 # Concept: 持久化 Agent 记忆
@@ -23,9 +23,24 @@ source_count: 1
 - 检索层：通过搜索工具按需暴露相关记忆。
 - 治理层：用隐私过滤、修剪和可审计性，防止记忆变成失控的上下文堆积。
 
+## 结构化记忆变体（来自自进化系统）
+
+[[sources/self-evolving-claude-code]] 提出比 Claude-Mem 更结构化的记忆方案：
+
+| 维度 | Claude-Mem | 自进化系统 |
+|------|-----------|----------|
+| 存储格式 | SQLite + Chroma 向量库 | JSONL 追加文件 + Markdown |
+| 检索方式 | 语义搜索（渐进式披露） | 文件读取（验证扫描时全量） |
+| 验证机制 | 无 | 每条规则附带 `verify:` 行，会话启动自动执行 |
+| 晋升机制 | 无（便签式记录） | 量化阶梯：纠正 → learned-rules → 永久配置 |
+| 容量治理 | 无明确上限 | `learned-rules.md` 50 行硬上限 |
+
+核心差异：Claude-Mem 强调**检索便利性**（语义搜索、渐进披露），自进化系统强调**规则执行性**（验证检查、自动晋升）。前者是便签本，后者是免疫系统。
+
 ## 支持来源
 
 - [[sources/claude-mem]]
+- [[sources/self-evolving-claude-code]]
 
 ## 相关页面
 
@@ -33,6 +48,9 @@ source_count: 1
 - [[entities/claude-code]]
 - [[concepts/persistent-wiki-compilation]]
 - [[concepts/progressive-disclosure-context-retrieval]]
+- [[concepts/self-evolving-agent-system]]
+- [[concepts/verification-sweep]]
+- [[concepts/rule-promotion-ladder]]
 
 ## 矛盾 / 细节
 

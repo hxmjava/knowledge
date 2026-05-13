@@ -2,8 +2,8 @@
 title: Verification Before Completion
 type: concept
 status: active
-updated: 2026-05-07
-source_count: 1
+updated: 2026-05-13
+source_count: 2
 ---
 
 # Concept: Verification Before Completion
@@ -40,9 +40,20 @@ verification-before-completion 与 [[concepts/tdd-as-hard-gate]] 互补但不等
 - 在功能开发链路中：`finishing-a-development-branch` 隐含了验证要求，但 verification-before-completion 将其从"建议"升级为"硬约束"。
 - 与 hooks 系统配合：可在 `Stop` hook 中检查"是否有新鲜验证结果"，对缺失情况发出提醒。
 
+## 泛化：所有规则都需要验证（来自自进化系统）
+
+[[sources/self-evolving-claude-code]] 将 verification-before-completion 的理念从"完成声明需验证"泛化为"**所有规则都需验证**"——每条 learned-rules 中的规则都必须附带 `verify:` 机器可检查行。没有 verify 行的规则被视为技术债。
+
+> "没有验证检查的规则是愿望，有验证检查的规则才是护栏。只有护栏才能存活。"
+
+这将 verification 从"交付关口"扩展到了整个规则生命周期：规则诞生（从纠正/观察）→ 规则验证（verify 行）→ 规则执行（验证扫描）→ 规则晋升（10+ 会话通过后永久化）。
+
+详见 [[concepts/verification-sweep]] 和 [[concepts/rule-promotion-ladder]]。
+
 ## Supporting Sources
 
 - [[sources/superpowers-workflow-deconstruction]]
+- [[sources/self-evolving-claude-code]]
 
 ## Related Pages
 

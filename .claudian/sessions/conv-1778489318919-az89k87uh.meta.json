@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778489318919-az89k87uh",
+  "providerId": "claude",
+  "title": "Ingest WeChat article into wiki",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778489318920,
+  "updatedAt": 1778497684110,
+  "lastResponseAt": 1778489938267,
+  "sessionId": "321a28f2-ca9b-4044-b3fa-7899d46edfee",
+  "providerState": {
+    "providerSessionId": "321a28f2-ca9b-4044-b3fa-7899d46edfee"
+  },
+  "currentNote": "Clippings/Vibe-Coding规范开发.md",
+  "usage": {
+    "model": "deepseek-v4-pro",
+    "inputTokens": 84,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 63360,
+    "contextWindow": 200000,
+    "contextTokens": 63444,
+    "percentage": 32,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -3,8 +3,8 @@ name: Specialized Agent Pattern
 description: Using layer-specific AI agents and domain-specific checker skills instead of a single general-purpose agent for all development tasks.
 type: concept
 status: draft
-updated: 2026-05-09
-source_count: 2
+updated: 2026-05-13
+source_count: 3
 ---
 
 # Concept: Specialized Agent Pattern
@@ -37,10 +37,22 @@ source_count: 2
 - 询问验证范围 → build-module-verifier
 - 模块无测试基建 → test-bootstrap
 
+## Architect / Reviewer 子智能体变体（来自自进化系统）
+
+[[sources/self-evolving-claude-code]] 提出更通用的双角色子智能体模式：
+
+| 角色 | 触发条件 | 模型 | 工具 | 职责 |
+|------|---------|------|------|------|
+| architect | 3+ 文件变更、新功能（非 bug fix）、需要理解组件交互 | sonnet | Read, Grep, Glob, Bash（只读） | 产出 PLAN/CHANGE/CREATE/RISK/ORDER/VERIFY 结构化输出 |
+| reviewer | 提交前验证、PR 审查 | sonnet | Read, Grep, Glob（只读） | 按优先级检查：崩溃→可利用→会慢→是否测试→可读性，输出 VERDICT |
+
+关键设计：两者都在**隔离上下文窗口**中启动——不共享主会话的上下文历史，避免上下文污染。architect 小于 3 文件时跳过（"This doesn't need a plan. Just do it."），避免过度设计。
+
 ## Supporting Sources
 
 - [[sources/ai-template2-scaffold]]
 - [[sources/fireworks-tech-graph]]
+- [[sources/self-evolving-claude-code]]
 
 ## Related Pages
 

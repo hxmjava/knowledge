@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778490848726-7jwjmkfus",
+  "providerId": "claude",
+  "title": "Ingest WeChat article into wiki",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778490848726,
+  "updatedAt": 1778550662236,
+  "lastResponseAt": 1778498266968,
+  "sessionId": "37131628-073c-4ef9-b3e3-ba5e43596a15",
+  "providerState": {
+    "providerSessionId": "37131628-073c-4ef9-b3e3-ba5e43596a15"
+  },
+  "usage": {
+    "model": "mimo-v2.5-pro",
+    "inputTokens": 712,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 80640,
+    "contextWindow": 200000,
+    "contextTokens": 81352,
+    "percentage": 41,
+    "contextWindowIsAuthoritative": true
+  }
+}

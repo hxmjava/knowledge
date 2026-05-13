@@ -2,7 +2,7 @@
 title: OpenSpec + Superpowers 规范开发指南
 type: source
 status: active
-updated: 2026-04-24
+updated: 2026-05-11
 source_count: 1
 ---
 
@@ -21,6 +21,9 @@ source_count: 1
 - 生产级功能推荐五阶段流水线：提案(OpenSpec) → 纠偏(Superpowers Plan) → 实现(Superpowers) → 验证(测试/CI) → 归档(OpenSpec)。
 - 按任务规模分级：核心业务/长期维护模块走完整流程；多人协作需对外说明走 OpenSpec；生产级迭代二者协同；极小 bugfix 用原生 Agent 最小流程。
 - 实战案例以 dlabel-cloud-mall-platform 商城二期自定义活动开发为例，展示了目录布局、规格设计、问题诊断与改进动作。
+- 工程化目录详解覆盖 `docs/`、`openspec/`（含 TDD-driven schema 配置）、`plugins/`、`.cursor/`、`.claude/`、`.agents/` 六个层级，含具体命令、技能和 hooks 配置。
+- 补充了 7 条 AI 编码使用技巧（提示词写法、上下文管理、示例驱动等）和 3 种 Context 不够用的解决方案（Claude-Mem 自动记忆、会话总结注入、永久归档追溯）。
+- 介绍了 Obsidian 软链接（symlink）模式：一套文件同时在 Obsidian 知识库和 Cursor/Claude Code 中管理，避免手动同步。
 
 ## Key Claims
 
@@ -129,13 +132,143 @@ dlabel-cloud-mall-platform/
 - 抽取 `ProductListDecorationService` 复用商品填充逻辑
 - 新增 `GET /customActivity/render.json`，加入 JWT 可选登录路径
 
-**遇到的问题与改进**：
+### 工程化目录详解
 
-1. **计划完整但执行闭环不足**：设计充分但代码落地进度不可见 → 固定执行顺序为 Spec → Plan → Task → 编译/测试 → 文档回写 → 归档，每 task 必须附可验证证据。
-2. **文档分散，版本漂移风险**：`docs/`、`openspec/`、`.cursor/doc/ai-context/` 语义重叠 → 规定 SSOT：规范基线 `openspec/specs/*`，团队实践 `docs/team-guides/*`，结构索引 `docs/project-structure.md`。
-3. **跨模块联调成本高**：C 端 render 依赖 base-api、product-api、app-mall 三段改动 → 先落 Dubbo API 契约，再落 Controller。
-4. **数据口径待确认**：`moduleType=4` 推荐商品来源双分支未定 → 先完成数据源定稿，再写业务分支。
-5. **验证策略未标准化**：缺统一"最小验收脚本清单" → 形成固定的 AI 开发 DoD 模板。
+#### `docs/` —— 文档中心
+
+```text
+docs/
+├── project-structure.md                     # 仓库与模块总览
+├── team-guides/                             # 团队流程、工具链实践
+└── superpowers/
+    ├── plans/                               # 实施计划（如 2026-04-02-custom-activity-backend.md）
+    └── specs/                               # 领域/功能设计说明
+```
+
+#### `openspec/` —— 规范真相源
+
+完整目录含 `config.yaml`、`project.md`、`specs/`、`changes/archive/`。**TDD-driven schema 示例**：
+
+```yaml
+# openspec/config.yaml
+schema: tdd-driven
+
+context: |
+  Tech stack: TypeScript, Node.js, Jest
+  Testing framework: Jest
+  API style: RESTful
+  All new code must have corresponding tests.
+
+rules:
+  proposal:
+    - Include testable acceptance criteria
+    - Use WHEN/THEN format for expected behaviors
+  specs:
+    - Use GIVEN/WHEN/THEN format
+    - Each scenario must be independently testable
+  tasks:
+    - Order tasks by TDD cycle: test → implement → refactor
+    - Each task must have a test description
+  plans:
+    - Break each task into 2-5 minute micro-steps
+    - Every step must produce a testable outcome
+```
+
+注入顺序：`context → rules → instruction → template`，四层叠加。`context` 所有 artifact 共享，`rules` 只注入到匹配 id 的 artifact。
+
+#### `plugins/` —— Superpowers 插件
+
+`plugins/superpowers/skills/` 包含 14 个技能：brainstorming、dispatching-parallel-agents、executing-plans、finishing-a-development-branch、receiving-code-review、requesting-code-review、subagent-driven-development、systematic-debugging、test-driven-development、using-git-worktrees、using-superpowers、verification-before-completion、writing-plans、writing-skills。配合 `hooks/`、`scripts/`、`assets/` 形成完整插件系统。
+
+#### `.cursor/` —— 编辑器配置
+
+- `commands/`：18 个斜杠命令（opsx-* 系列 + Superpowers 各 skill 对应命令）
+- `rules/`：AI 持久约束（`.mdc` 格式），如包结构约束、API 设计规范
+- `skills/`：OpenSpec 技能入口（explore/propose/apply-change/archive-change）
+- `doc/ai-context/`：长期项目上下文（project-structure、architecture、coding-standards）
+- `prompts/`：场景化提示词模板（review、fix、debug、optimize、arch、api、sql、trace、compact）
+
+#### `.claude/` —— Claude Code 配置
+
+- `settings.json` + `agents/`（mall-common-agent、mall-service-agent、mall-app-agent、mall-message-agent）
+- `commands/`（mall-verify、mall-change-apply、mall-review-risk、mall-module-locate）
+- `skills/`：项目级技能（maven-module-verifier、dubbo-api-change-checker、mybatis-change-checker、message-consumer-checker、spring-xml-config-checker）
+- `hooks/`：生命周期钩子（hooks.py + hooks-config.json）
+
+**推荐使用顺序**：`/mall-dev` → `/mall-module-locate` → 对应 Agent → 高风险补充 checker → `/mall-spec-sync` → `/mall-verify` → `/mall-review-complete`。
+
+#### `.agents/` —— Agent 配置
+
+`plugins/marketplace.json` 配置本地 marketplace，指向 `./plugins/superpowers`，含 `installation: AVAILABLE` 策略。
+
+### 踩坑复盘（四维度）
+
+| 问题 | 现象 | 根因 | 影响 |
+|------|------|------|------|
+| 执行闭环不足 | 计划文档任务拆解细但多数未勾选 | 重点偏向方案产出，未按 task-by-task 推进到验证归档 | "计划完成=开发完成"的错觉 |
+| 文档分散 | `docs/`、`openspec/`、`.cursor/doc/ai-context/` 语义重叠 | 不同用途文档并行演进，缺 SSOT 声明 | 版本漂移 |
+| 跨模块链路长 | C 端 render 依赖三段改动 | 历史分层清晰但跨模块接口多 | 串联回归风险 |
+| 数据口径未确认 | `moduleType=4` 双分支未定 | 数据库现状与业务规则未在开发前确认 | 临时逻辑长期化 |
+
+### 改进措施
+
+**流程层（必须）**：
+1. 执行顺序固定：`Spec → Plan → Task实施 → 编译/测试 → 文档回写 → 归档`
+2. 每 task 附一条「可验证证据」（命令、接口返回、截图或日志摘要）
+3. 计划文档 checkbox 作为主进度源，禁止只在聊天中口头同步
+
+**文档层（必须）**：
+- SSOT 规定：规范基线 → `openspec/specs/*`；团队实践 → `docs/team-guides/*`；结构索引 → `docs/project-structure.md`
+- 重复主题文档首段加「来源与优先级说明」
+- 目录新增/迁移同步更新 `docs/project-structure.md`
+
+**技术层（建议）**：
+1. 先落 Dubbo API 契约，再落 app-mall Controller
+2. `moduleType=4` 先完成数据源定稿，再写业务分支
+3. 抽取公共组件后补对齐回归测试用例
+
+### AI Template 脚手架
+
+仓库：[Gitee - hxm0203/ai_template](https://gitee.com/hxm0203/ai_template)。快速生成 AI 辅助开发的项目模板，集成 OpenSpec / Superpowers 等规范工具链的初始结构，减少从零搭建成本。
+
+## 使用心得与上下文管理
+
+### 七条核心技巧
+
+1. **在提示词中明确具体内容**：清晰说明目标而非只描述修改点，含语言/框架/风格约束。
+2. **附上相关文件**：只包含与任务直接相关的文件，不要丢整个代码库。
+3. **有策略地使用已打开的文件**：Cursor 等工具会自动纳入已打开文件为上下文，只保留相关文件打开。
+4. **充分利用可用的上下文来源**：终端输出、linter 错误、测试结果都是有价值的上下文。
+5. **保持对话重点突出**：上下文窗口有限，新任务开启新对话，避免单一线程过长导致质量下降。
+6. **提供示例**：模型在模仿模式方面表现出色，展示期望的格式或风格示例。
+7. **在有帮助时使用图像**：UI 截图或图表能传达难以用文字描述的上下文。
+
+> **核心认知**：做好上下文管理，其影响最终要大于精心设计完美的提示词——输入内容的质量直接决定输出内容的质量。
+
+### 解决 Context 不够用
+
+| 策略 | 工具/方法 | 说明 |
+|------|-----------|------|
+| 自动记忆 | [[entities/claude-mem\|Claude-Mem]] | 自动捕获工具使用观察、生成语义摘要，跨会话保留上下文 |
+| 会话总结与注入 | `prompt process.md` | 总结当前会话生成文件，新会话窗口 `@process.md` 注入 |
+| 永久归档追溯 | OpenSpec `proposal/design/spec/tasks.md` | 永久归档，方便历史追溯 |
+
+## Obsidian 软链接：打通项目与知识库
+
+通过 Windows 符号链接，将项目目录映射到 Obsidian vault 中，实现**一套文件、两处管理**：
+
+```powershell
+New-Item -ItemType SymbolicLink `
+  -Path "F:\obsidian\mall" `
+  -Target "F:\claude\mall\project\dlabel-cloud-mall-platform"
+```
+
+| 位置 | 用途 |
+|------|------|
+| `F:\obsidian\mall\` | Obsidian 中以知识库形式浏览、编辑、链接项目文档 |
+| `F:\claude\mall\project\...` | Cursor / Claude Code 等编辑器中正常开发 |
+
+核心收益：使用 Obsidian 管理 MD 文档（双向链接、标签、图谱），在 Cursor 等编辑器中直接引用同一份文件，无需手动同步。
 
 ## Contradictions / Tensions
 
@@ -154,6 +287,8 @@ dlabel-cloud-mall-platform/
 - [[concepts/spec-driven-workflow-and-review-discipline]]
 - [[concepts/team-governance-for-ai-coding]]
 - [[concepts/schema-driven-maintenance]]
+- [[concepts/context-and-cost-optimization]]
+- [[concepts/obsidian-project-symlink]]
 
 ## Follow-up Questions
 
